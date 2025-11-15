@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego Proyecto</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/ahorcado.png">
+</head>
+<body>
+
+  <!-- 🧩 Contenedor principal con barra lateral y juego -->
+  <div class="container">
+    
+    <!-- 🧭 Barra lateral de secciones -->
+    <aside id="sidebar">
+      <h3>📚 Secciones</h3>
+      <ul id="word-list"></ul>
+    </aside>
+
+    <!-- 🎮 Zona principal del juego -->
+    <main id="game-container">
+      <canvas id="hangman" width="200" height="200"></canvas>
+      <p id="hint"></p> <!-- Pista -->
+      <p id="word"></p>
+      <p id="message"></p>
+      <div id="keyboard">
+      </div>
+      <button id="reset">🔄 Reiniciar</button>
+    </main>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
